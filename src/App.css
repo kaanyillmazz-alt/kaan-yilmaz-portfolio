@@ -5,4 +5,28 @@
   text-align: center;
 }
 
+.container {
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  top: -20vh;
+  left: 0;
+  overflow: hidden;
+}
 
+.flake {
+  color: rgb(112, 248, 1);
+  font-size: 2rem;
+  padding: 1rem;
+  animation: fall 2s linear forwards infinite;
+  animation-delay: 1s;
+}
+
+@keyframes fall {
+  from {
+    transform: translateY(-20vh);
+  }
+  to {
+    transform: translateY(100vh);
+  }
+}
